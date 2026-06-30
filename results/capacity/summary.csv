@@ -4,7 +4,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 30,cluster_first,scenario3,851998.1400,8519.9814,112.2200,100,ok,true
 30,match_first,scenario1,518751.5400,5187.5154,946.4900,100,ok,false
 30,match_first,scenario2,518751.5400,5187.5154,1210.2300,100,ok,false
-30,match_first,scenario3,862414.5700,8624.1457,80.6500,100,ok,true
+30,match_first,scenario3,849194.5600,8491.9456,288.3500,100,ok,true
 30,ca_ilp,scenario1,0.0000,0.0000,516.3616,100,ok,false
 30,ca_ilp,scenario2,0.0000,0.0000,17308.4538,100,ok,false
 30,ca_ilp,scenario3,0.0000,0.0000,507.9004,100,ok,true
@@ -16,7 +16,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 50,cluster_first,scenario3,817651.4300,8176.5143,119.3700,100,ok,true
 50,match_first,scenario1,518751.5400,5187.5154,962.3100,100,ok,false
 50,match_first,scenario2,518674.4800,5186.7448,1228.6700,100,ok,false
-50,match_first,scenario3,843264.1500,8432.6415,112.5500,100,ok,true
+50,match_first,scenario3,811457.2000,8114.5720,334.6900,100,ok,true
 50,ca_ilp,scenario1,0.0000,0.0000,558.9823,100,ok,false
 50,ca_ilp,scenario2,0.0000,0.0000,17615.9705,100,ok,false
 50,ca_ilp,scenario3,0.0000,0.0000,559.5252,100,ok,true
@@ -28,7 +28,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 90,cluster_first,scenario3,703689.9400,7036.8994,153.8800,100,ok,true
 90,match_first,scenario1,518751.5400,5187.5154,984.0400,100,ok,false
 90,match_first,scenario2,524941.0000,5249.4100,1259.5200,100,ok,false
-90,match_first,scenario3,755753.7700,7557.5377,329.6100,100,ok,true
+90,match_first,scenario3,697254.7300,6972.5473,388.9000,100,ok,true
 90,ca_ilp,scenario1,0.0000,0.0000,930.0084,100,ok,false
 90,ca_ilp,scenario2,0.0000,0.0000,19815.1744,100,ok,false
 90,ca_ilp,scenario3,0.0000,0.0000,974.7292,100,ok,true
@@ -40,7 +40,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 150,cluster_first,scenario3,546899.8900,5468.9989,249.4800,100,ok,true
 150,match_first,scenario1,518751.5400,5187.5154,1036.3700,100,ok,false
 150,match_first,scenario2,510786.7800,5107.8678,1366.0500,100,ok,false
-150,match_first,scenario3,542878.9000,5428.7890,936.3600,100,ok,true
+150,match_first,scenario3,541050.0300,5410.5003,497.6500,100,ok,true
 150,ca_ilp,scenario1,530488.0362,5304.8804,32613.0766,100,ok,false
 150,ca_ilp,scenario2,474291.2954,4742.9130,444190.2112,100,ok,false
 150,ca_ilp,scenario3,530488.0362,5304.8804,34737.6664,100,ok,true
@@ -52,7 +52,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 200,cluster_first,scenario3,523298.8300,5232.9883,271.6800,100,ok,true
 200,match_first,scenario1,518751.5400,5187.5154,1038.9200,100,ok,true
 200,match_first,scenario2,478394.4300,4783.9443,1394.7800,100,ok,true
-200,match_first,scenario3,518751.5400,5187.5154,1096.9000,100,ok,true
+200,match_first,scenario3,518671.0700,5186.7107,491.4300,100,ok,true
 200,ca_ilp,scenario1,512858.7763,5128.5878,44110.7169,100,ok,true
 200,ca_ilp,scenario2,389015.1896,3890.1519,1809179.8907,100,ok,true
 200,ca_ilp,scenario3,512858.7763,5128.5878,40518.5021,100,ok,true
@@ -64,7 +64,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 250,cluster_first,scenario3,523298.8300,5232.9883,527.7400,100,ok,true
 250,match_first,scenario1,518751.5400,5187.5154,1100.7000,100,ok,true
 250,match_first,scenario2,415352.3900,4153.5239,1370.7700,100,ok,true
-250,match_first,scenario3,518751.5400,5187.5154,1134.6400,100,ok,true
+250,match_first,scenario3,518671.0700,5186.7107,555.9900,100,ok,true
 250,ca_ilp,scenario1,512858.7763,5128.5878,31155.5208,100,ok,true
 250,ca_ilp,scenario2,353195.4980,3531.9550,2731273.3568,100,ok,true
 250,ca_ilp,scenario3,512858.7763,5128.5878,31221.6709,100,ok,true
@@ -76,7 +76,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 300,cluster_first,scenario3,523298.8300,5232.9883,414.6800,100,ok,true
 300,match_first,scenario1,518751.5400,5187.5154,1032.2200,100,ok,true
 300,match_first,scenario2,370434.6400,3704.3464,1330.4400,100,ok,true
-300,match_first,scenario3,518751.5400,5187.5154,1082.0400,100,ok,true
+300,match_first,scenario3,518671.0700,5186.7107,591.7500,100,ok,true
 300,ca_ilp,scenario1,512858.7763,5128.5878,31195.6060,100,ok,true
 300,ca_ilp,scenario2,342369.3051,3423.6931,2970854.2971,100,ok,true
 300,ca_ilp,scenario3,512858.7763,5128.5878,31203.6006,100,ok,true
@@ -88,7 +88,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 350,cluster_first,scenario3,523298.8300,5232.9883,429.2500,100,ok,true
 350,match_first,scenario1,518751.5400,5187.5154,1127.3100,100,ok,true
 350,match_first,scenario2,349291.4500,3492.9145,1343.4500,100,ok,true
-350,match_first,scenario3,518751.5400,5187.5154,1136.3100,100,ok,true
+350,match_first,scenario3,518671.0700,5186.7107,511.0900,100,ok,true
 350,ca_ilp,scenario1,512858.7763,5128.5878,33369.9797,100,ok,true
 350,ca_ilp,scenario2,340723.5844,3407.2358,3118016.0993,100,ok,true
 350,ca_ilp,scenario3,512858.7763,5128.5878,32590.7682,100,ok,true
@@ -100,7 +100,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 400,cluster_first,scenario3,523298.8300,5232.9883,522.7000,100,ok,true
 400,match_first,scenario1,518751.5400,5187.5154,1031.2600,100,ok,true
 400,match_first,scenario2,348674.7400,3486.7474,1300.9600,100,ok,true
-400,match_first,scenario3,518751.5400,5187.5154,1106.5700,100,ok,true
+400,match_first,scenario3,518671.0700,5186.7107,591.5200,100,ok,true
 400,ca_ilp,scenario1,512858.7763,5128.5878,31326.4358,100,ok,true
 400,ca_ilp,scenario2,340654.9475,3406.5495,3060280.7481,100,ok,true
 400,ca_ilp,scenario3,512858.7763,5128.5878,31227.0745,100,ok,true
@@ -112,7 +112,7 @@ capacity,method,scenario,total_cost,mean_cost,total_time_ms,n_datasets,status,ca
 500,cluster_first,scenario3,523298.8300,5232.9883,271.7700,100,ok,true
 500,match_first,scenario1,518751.5400,5187.5154,987.1800,100,ok,true
 500,match_first,scenario2,348674.7400,3486.7474,1224.3500,100,ok,true
-500,match_first,scenario3,518751.5400,5187.5154,1005.1600,100,ok,true
+500,match_first,scenario3,518671.0700,5186.7107,480.7200,100,ok,true
 500,ca_ilp,scenario1,512858.7763,5128.5878,32974.0652,100,ok,true
 500,ca_ilp,scenario2,340654.9475,3406.5495,3089732.0168,100,ok,true
 500,ca_ilp,scenario3,512858.7763,5128.5878,31691.5938,100,ok,true

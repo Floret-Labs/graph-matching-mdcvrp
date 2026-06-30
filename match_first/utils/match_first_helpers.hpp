@@ -11,6 +11,11 @@ using Group = std::vector<int>;
 
 types::GraphInput build_target_graph(const parser::Dataset& dataset);
 
+// Drop target-target edges whose pair tour is not cheaper than serving both as singletons
+// (savings <= 0). Routes each candidate pair from the depot nearest its centroid, mirroring
+// the routing rule, so a kept edge always yields a strict saving over two singleton tours.
+types::GraphInput apply_savings_constraint(const parser::Dataset& dataset, const types::GraphInput& input);
+
 int scenario2_capacity(const parser::Dataset& dataset);
 int scenario3_capacity(const parser::Dataset& dataset);
 

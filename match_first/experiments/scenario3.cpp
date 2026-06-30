@@ -84,12 +84,14 @@ int main(int argc, char** argv) {
 
         auto graph_input = match_first::build_target_graph(dataset);
         graph_input.capacity = (capacity_override > 0) ? capacity_override : match_first::scenario3_capacity(dataset);
-        const auto filtered = filters::apply_weight_constraint(graph_input);
+        const auto feasible = filters::apply_weight_constraint(graph_input);
+        const auto filtered = match_first::apply_savings_constraint(dataset, feasible);
 
         if (debug) {
             std::cout << "Testing: " << dataset_name
                 << " (C = " << graph_input.capacity
                 << ", edges: " << graph_input.edges.size()
+                << " -> " << feasible.edges.size()
                 << " -> " << filtered.edges.size() << ")\n";
         }
 

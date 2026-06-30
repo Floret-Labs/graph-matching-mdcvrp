@@ -182,6 +182,35 @@ int nearest_depot_id(const Coordinates& point, const Dataset& dataset) {
     return best_id;
 }
 
+GraphInput apply_savings_constraint(const Dataset& dataset, const GraphInput& input) {
+    GraphInput filtered = input;
+    filtered.edges.clear();
+    filtered.edges.reserve(input.edges.size());
+
+    // delta[k] = nearest-depot distance of target k; serving k alone costs 2*delta[k].
+    std::unordered_map<int, int> delta;
+    delta.reserve(input.nodes.size());
+    for (const auto& node : input.nodes) {
+        int best = std::numeric_limits<int>::max();
+        for (std::size_t q = 0; q < dataset.depots.size(); ++q) {
+            best = std::min(best, depot_distance(dataset, static_cast<int>(q), node.id));
+        }
+        delta[node.id] = best;
+    }
+
+    for (const auto& [u, v, w] : input.edges) {
+        const int pc = nearest_depot_id(centroid_of({u, v}, dataset), dataset);
+        const long long pair_cost =
+            static_cast<long long>(depot_distance(dataset, pc, u)) + w + depot_distance(dataset, pc, v);
+        const long long singletons = 2LL * delta[u] + 2LL * delta[v];
+        if (singletons - pair_cost > 0) {
+            filtered.edges.push_back({u, v, w});
+        }
+    }
+
+    return filtered;
+}
+
 std::vector<Group> build_matched_groups(const Dataset& dataset, const MatchingResult& matching) {
     std::vector<Group> groups;
     groups.reserve(matching.matched_edges.size() + dataset.targets.size() % 2);
